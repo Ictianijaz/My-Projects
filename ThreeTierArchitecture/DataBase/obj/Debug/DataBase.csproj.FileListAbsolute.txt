@@ -1,0 +1,4 @@
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\DataBase\bin\Debug\DataBase.dll
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\DataBase\bin\Debug\DataBase.pdb
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\DataBase\obj\Debug\DataBase.dll
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\DataBase\obj\Debug\DataBase.pdb

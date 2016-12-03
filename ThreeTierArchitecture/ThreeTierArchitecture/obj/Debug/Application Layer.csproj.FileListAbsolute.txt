@@ -1,0 +1,13 @@
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\bin\Debug\ThreeTierArchitecture.exe.config
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\bin\Debug\ThreeTierArchitecture.exe
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\bin\Debug\ThreeTierArchitecture.pdb
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\bin\Debug\logicLayer.dll
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\bin\Debug\DataBase.dll
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\bin\Debug\logicLayer.pdb
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\bin\Debug\DataBase.pdb
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\obj\Debug\Application Layer.csprojResolveAssemblyReference.cache
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\obj\Debug\ThreeTierArchitecture.login.resources
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\obj\Debug\ThreeTierArchitecture.Properties.Resources.resources
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\obj\Debug\Application Layer.csproj.GenerateResource.Cache
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\obj\Debug\ThreeTierArchitecture.exe
+G:\5th semester\Visual Studio Projects\ThreeTierArchitecture\ThreeTierArchitecture\obj\Debug\ThreeTierArchitecture.pdb
