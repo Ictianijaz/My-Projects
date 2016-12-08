@@ -197,6 +197,7 @@
             this.undoCtrlZToolStripMenuItem.Name = "undoCtrlZToolStripMenuItem";
             this.undoCtrlZToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.undoCtrlZToolStripMenuItem.Text = "Undo                   Ctrl + Z";
+            this.undoCtrlZToolStripMenuItem.Click += new System.EventHandler(this.undoCtrlZToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -208,24 +209,28 @@
             this.cutCtrlXToolStripMenuItem.Name = "cutCtrlXToolStripMenuItem";
             this.cutCtrlXToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.cutCtrlXToolStripMenuItem.Text = "Cut                      Ctrl + X";
+            this.cutCtrlXToolStripMenuItem.Click += new System.EventHandler(this.cutCtrlXToolStripMenuItem_Click);
             // 
             // copyCtrlCToolStripMenuItem
             // 
             this.copyCtrlCToolStripMenuItem.Name = "copyCtrlCToolStripMenuItem";
             this.copyCtrlCToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.copyCtrlCToolStripMenuItem.Text = "Copy                   Ctrl + C";
+            this.copyCtrlCToolStripMenuItem.Click += new System.EventHandler(this.copyCtrlCToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.pasteToolStripMenuItem.Text = "Paste                   Ctrl + V";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // deleteDelToolStripMenuItem
             // 
             this.deleteDelToolStripMenuItem.Name = "deleteDelToolStripMenuItem";
             this.deleteDelToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.deleteDelToolStripMenuItem.Text = "Delete                        Del";
+            this.deleteDelToolStripMenuItem.Click += new System.EventHandler(this.deleteDelToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
@@ -237,6 +242,7 @@
             this.findCtrlFToolStripMenuItem.Name = "findCtrlFToolStripMenuItem";
             this.findCtrlFToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.findCtrlFToolStripMenuItem.Text = "Find...                 Ctrl + F";
+            this.findCtrlFToolStripMenuItem.Click += new System.EventHandler(this.findCtrlFToolStripMenuItem_Click);
             // 
             // findNextF3ToolStripMenuItem
             // 
@@ -266,12 +272,14 @@
             this.selectAllCtrlAToolStripMenuItem.Name = "selectAllCtrlAToolStripMenuItem";
             this.selectAllCtrlAToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.selectAllCtrlAToolStripMenuItem.Text = "Select All           Ctrl + A";
+            this.selectAllCtrlAToolStripMenuItem.Click += new System.EventHandler(this.selectAllCtrlAToolStripMenuItem_Click);
             // 
             // timeDateToolStripMenuItem
             // 
             this.timeDateToolStripMenuItem.Name = "timeDateToolStripMenuItem";
             this.timeDateToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.timeDateToolStripMenuItem.Text = "Time/Date                 F5";
+            this.timeDateToolStripMenuItem.Click += new System.EventHandler(this.timeDateToolStripMenuItem_Click);
             // 
             // formatToolStripMenuItem
             // 
@@ -285,13 +293,13 @@
             // wordWrapToolStripMenuItem
             // 
             this.wordWrapToolStripMenuItem.Name = "wordWrapToolStripMenuItem";
-            this.wordWrapToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wordWrapToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.wordWrapToolStripMenuItem.Text = "Word  Wrap";
             // 
             // fontToolStripMenuItem
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.fontToolStripMenuItem.Text = "Font...";
             // 
             // viewToolStripMenuItem
@@ -305,7 +313,7 @@
             // statusBarToolStripMenuItem
             // 
             this.statusBarToolStripMenuItem.Name = "statusBarToolStripMenuItem";
-            this.statusBarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.statusBarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.statusBarToolStripMenuItem.Text = "Status Bar";
             // 
             // helpToolStripMenuItem
@@ -466,6 +474,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "notepad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Notepad";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.notepad_FormClosing);
             this.Load += new System.EventHandler(this.notepad_Load);

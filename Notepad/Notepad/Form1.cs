@@ -25,7 +25,22 @@ namespace Notepad
 
         private void notepad_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (isFileDirty)
+            {
+                DialogResult res = MessageBox.Show("Do you want to save it", "Notepad", MessageBoxButtons.YesNoCancel);
+                if (res == DialogResult.Yes)
+                {
+                    Save();
+                }
+                else if (res == DialogResult.No)
+                {
+                    Application.Exit();
+                }
+                else
+                    return;
+            }
+            else
+                Application.Exit();
         }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,18 +75,52 @@ namespace Notepad
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (isFileDirty)
+            {
+                DialogResult res = MessageBox.Show("Do you want to save it", "Notepad", MessageBoxButtons.YesNoCancel);
+                if (res == DialogResult.Yes)
+                {
+                    Save();
+                }
+                else if (res == DialogResult.No)
+                {
+                    Application.Exit();
+                }
+                else if(res == DialogResult.Cancel)
+                    return;
+            }
+            else
+                Application.Exit();
         }
 
         private void newCtrlNToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.txtBox.Clear();
-            this.Text = "Untitled - Notepad";
+
+            if (isFileDirty)
+            {
+                DialogResult res = MessageBox.Show("Do you want to save it", "Notepad", MessageBoxButtons.YesNoCancel);
+                if (res == DialogResult.Yes)
+                {
+                    Save();
+                }
+                else if (res == DialogResult.No)
+                {
+                    this.txtBox.Clear();
+                    this.Text = "Untitled - Notepad";
+                }
+                else
+                    return;
+            }
+            else
+            {
+                this.txtBox.Clear();
+                this.Text = "Untitled - Notepad";
+            }
+               
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
             OpenFileDialog f = new OpenFileDialog();
             f.Filter = "Text files(*.txt)|*.txt|Rich Text From(*.rtf)|*.rtf";
             DialogResult result =  f.ShowDialog();
@@ -92,6 +141,10 @@ namespace Notepad
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Save();
+        }
+        public void Save()
         {
             if (isFileAlreadySaved)
             {
@@ -131,7 +184,6 @@ namespace Notepad
                 }
             }
         }
-
         private void notepad_Load(object sender, EventArgs e)
         {
             isFileAlreadySaved = false;
@@ -147,6 +199,46 @@ namespace Notepad
         private void aboutNotePadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This is VP Lab assignment and all rigth are reserved by Author", "About Notepad", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void undoCtrlZToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.txtBox.Undo();
+        }
+
+        private void cutCtrlXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.txtBox.Cut();
+        }
+
+        private void copyCtrlCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.txtBox.Copy();
+        }
+
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.txtBox.Paste();
+        }
+
+        private void deleteDelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.txtBox.SelectedText = "";
+        }
+
+        private void selectAllCtrlAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.txtBox.SelectAll();
+        }
+
+        private void timeDateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.txtBox.Text += DateTime.Today;
+        }
+
+        private void findCtrlFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -1,0 +1,20 @@
+G:\5th semester\Visual Studio Projects\CSharpTutorial1\CSharpTutorial1\obj\Debug\CSharpTutorial1.calculator.resources
+G:\5th semester\Visual Studio Projects\CSharpTutorial1\CSharpTutorial1\obj\Debug\CSharpTutorial1.Properties.Resources.resources
+G:\5th semester\Visual Studio Projects\CSharpTutorial1\CSharpTutorial1\obj\Debug\Calculator.csproj.GenerateResource.Cache
+G:\5th semester\Visual Studio Projects\CSharpTutorial1\CSharpTutorial1\bin\Debug\CSharpTutorial1.exe.config
+G:\5th semester\Visual Studio Projects\CSharpTutorial1\CSharpTutorial1\bin\Debug\CSharpTutorial1.exe
+G:\5th semester\Visual Studio Projects\CSharpTutorial1\CSharpTutorial1\bin\Debug\CSharpTutorial1.pdb
+G:\5th semester\Visual Studio Projects\CSharpTutorial1\CSharpTutorial1\obj\Debug\CSharpTutorial1.exe
+G:\5th semester\Visual Studio Projects\CSharpTutorial1\CSharpTutorial1\obj\Debug\CSharpTutorial1.pdb
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\bin\Debug\CSharpTutorial1.exe.config
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\bin\Debug\CSharpTutorial1.exe
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\bin\Debug\CSharpTutorial1.pdb
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\obj\Debug\CSharpTutorial1.calculator.resources
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\obj\Debug\CSharpTutorial1.Properties.Resources.resources
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\obj\Debug\CSharpTutorial1.exe
+G:\5th semester\Visual Studio Projects\My Calculator\My Calculator\obj\Debug\CSharpTutorial1.pdb
+G:\5th semester\Visual Studio Projects\My Calculator\bin\Debug\CSharpTutorial1.exe.config
+G:\5th semester\Visual Studio Projects\My Calculator\obj\Debug\CSharpTutorial1.exe
+G:\5th semester\Visual Studio Projects\My Calculator\obj\Debug\CSharpTutorial1.pdb
