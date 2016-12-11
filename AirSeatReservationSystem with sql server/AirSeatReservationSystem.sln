@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLayer", "AirSeatReservationSystem\ApplicationLayer.csproj", "{B9A6D06C-3106-497B-994B-379A677DB109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{EBC39177-30F8-44DF-B5A1-3EFFF51914AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{4B0B3E33-1663-486C-8800-695D2CB83487}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9A6D06C-3106-497B-994B-379A677DB109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A6D06C-3106-497B-994B-379A677DB109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A6D06C-3106-497B-994B-379A677DB109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A6D06C-3106-497B-994B-379A677DB109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC39177-30F8-44DF-B5A1-3EFFF51914AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC39177-30F8-44DF-B5A1-3EFFF51914AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC39177-30F8-44DF-B5A1-3EFFF51914AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC39177-30F8-44DF-B5A1-3EFFF51914AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0B3E33-1663-486C-8800-695D2CB83487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0B3E33-1663-486C-8800-695D2CB83487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0B3E33-1663-486C-8800-695D2CB83487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0B3E33-1663-486C-8800-695D2CB83487}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

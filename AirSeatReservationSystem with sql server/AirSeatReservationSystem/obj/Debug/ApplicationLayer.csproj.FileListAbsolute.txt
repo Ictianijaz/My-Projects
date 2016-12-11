@@ -13,6 +13,3 @@ G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\AirSeatReservati
 G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\AirSeatReservationSystem\obj\Debug\AirSeatReservationSystem.exe
 G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\AirSeatReservationSystem\obj\Debug\AirSeatReservationSystem.pdb
 G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\AirSeatReservationSystem\obj\Debug\AirSeatReservationSystem.CancelSeat.resources
-G:\GitHub\My-Projects\AirSeatReservationSystem\AirSeatReservationSystem\bin\Debug\AirSeatReservationSystem.exe.config
-G:\GitHub\My-Projects\AirSeatReservationSystem\AirSeatReservationSystem\obj\Debug\AirSeatReservationSystem.exe
-G:\GitHub\My-Projects\AirSeatReservationSystem\AirSeatReservationSystem\obj\Debug\AirSeatReservationSystem.pdb

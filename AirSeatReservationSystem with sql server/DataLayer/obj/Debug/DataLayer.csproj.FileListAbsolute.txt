@@ -1,0 +1,5 @@
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\DataLayer\bin\Debug\DataLayer.dll
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\DataLayer\bin\Debug\DataLayer.pdb
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\DataLayer\obj\Debug\DataLayer.dll
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\DataLayer\obj\Debug\DataLayer.pdb
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache

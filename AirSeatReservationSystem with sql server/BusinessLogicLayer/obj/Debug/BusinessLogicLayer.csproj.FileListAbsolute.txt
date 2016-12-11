@@ -1,0 +1,7 @@
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\BusinessLogicLayer\bin\Debug\DataLayer.dll
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\BusinessLogicLayer\bin\Debug\DataLayer.pdb
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+G:\5th semester\Visual Studio Projects\AirSeatReservationSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
