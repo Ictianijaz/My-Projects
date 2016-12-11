@@ -34,75 +34,69 @@ namespace AirSeatReservationSystem
 
         private void reserve_Click(object sender, EventArgs e)
         {
-            DialogResult r = MessageBox.Show("Are your sure", "Confirmation message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (r == DialogResult.Yes)
+            if (this.name.Text == "" || this.fName.Text == "" || this.cnic.Text == "")
             {
-                if (this.name.Text == "" || this.fName.Text == "" || this.cnic.Text == "")
-                {
-                    if (this.name.Text == "")
-                    {
-                        DialogResult res = MessageBox.Show("Enter your name", "Error Message", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-                        if (res == DialogResult.Cancel)
-                        {
-                            seatReservation s = new seatReservation();
-                            s.Show();
-                            this.Hide();
-                        }
-                    }
-                    if (this.fName.Text == "")
-                    {
-                        DialogResult rr = MessageBox.Show("Enter your father name", "Error Message", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-                        if (rr == DialogResult.Cancel)
-                        {
-                            seatReservation s = new seatReservation();
-                            s.Show();
-                            this.Hide();
-                        }
-                    }
-                    if (this.cnic.Text == "")
-                    {
-                        DialogResult rrr = MessageBox.Show("Enter your cnic", "Error Message", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-                        if (rrr == DialogResult.Cancel)
-                        {
-                            seatReservation s = new seatReservation();
-                            s.Show();
-                            this.Hide();
-                        }
-                    }
-                }
-                else
-                {
-                    FacadeControler f = FacadeControler.getFacadeControler();
-                    if (f.cnicFormat(this.cnic.Text))
-                    {
-                        string[] info = new string[4];
-                        info[0] = this.name.Text;
-                        info[1] = this.fName.Text;
-                        info[2] = this.cnic.Text;
-                        info[3] = this.seatNo;
-                        f.getInfo(info);
-                        MessageBox.Show("Your seat reserved successfully", "Information message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        seatReservation s = new seatReservation();
-                        s.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        DialogResult rre = MessageBox.Show("CNIC must be numeric and must have length 13", "Error message", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-                        if (rre == DialogResult.Cancel)
-                        {
-                            seatReservation s = new seatReservation();
-                            s.Show();
-                            this.Hide();
-                        }
-                    }
-                }
+                if (this.name.Text == "")
+                    this.GetInfoErrorProvider.SetError(name,"Must be filled");
+                if (this.fName.Text == "")
+                    this.errorProvider1.SetError(fName, "Must be filled");
+                if (this.cnic.Text == "")
+                    this.errorProvider2.SetError(cnic, "Must be filled");
             }
             else
             {
-                seatReservation s = new seatReservation();
-                s.Show();
-                this.Hide();
+                GetInfoErrorProvider.Clear();
+                errorProvider2.Clear();
+                errorProvider1.Clear();
+                DialogResult r = MessageBox.Show("Are your sure", "Confirmation message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (r == DialogResult.Yes)
+                {
+                    FacadeControler f = FacadeControler.getFacadeControler();
+                    string[] info = new string[4];
+                    info[0] = this.name.Text;
+                    info[1] = this.fName.Text;
+                    info[2] = this.cnic.Text;
+                    info[3] = this.seatNo;
+                    f.getInfo(info);
+                    MessageBox.Show("Your seat reserved successfully", "Information message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    seatReservation s = new seatReservation();
+                    s.Show();
+                    this.Hide();
+                }
+            }
+        }
+
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            if (name.Text == "")
+                GetInfoErrorProvider.SetError(name, "Must be filled");
+            else
+                GetInfoErrorProvider.Clear();
+        }
+
+        private void fName_TextChanged(object sender, EventArgs e)
+        {
+            if (fName.Text == "")
+                errorProvider1.SetError(fName, "Must be filled");
+            else
+                errorProvider1.Clear();
+        }
+
+        private void cnic_TextChanged(object sender, EventArgs e)
+        {
+            if (cnic.Text == "")
+                errorProvider2.SetError(cnic, "Must be filled");
+            else
+            {
+                FacadeControler f = FacadeControler.getFacadeControler();
+                if (f.cnicFormat(cnic.Text))
+                {
+                    errorProvider2.Clear();
+                }
+                else
+                {
+                    errorProvider2.SetError(cnic, "Invalid Format");
+                }
             }
         }
     }

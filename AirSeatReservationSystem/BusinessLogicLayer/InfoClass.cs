@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using DataLayer;
 
@@ -78,24 +79,11 @@ namespace BusinessLogicLayer
         }
         public bool cnicFormatInfo(string cnic)
         {
-            if (cnic.Length < 13 || cnic.Length > 13)
-            {
-                return false;
-            }
-            else
-            {
-                char[] arr = cnic.ToCharArray();
-                bool flage = true;
-                for (int i = 0; i < cnic.Length; i++)
-                {
-                    if (!(arr[i] >= '0' && arr[i] <= '9'))
-                    {
-                        flage = false;
-                        break;
-                    }
-                }
-                return flage;
-            }
+        
+            string pattern = @"^[0-9+]{5}-[0-9+]{7}-[0-9]{1}$";
+            Regex rgx = new Regex(pattern,RegexOptions.IgnoreCase);
+            return rgx.IsMatch(cnic);
         }
+       
     }
 }

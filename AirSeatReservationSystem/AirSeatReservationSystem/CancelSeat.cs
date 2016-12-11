@@ -34,13 +34,17 @@ namespace AirSeatReservationSystem
 
         private void ok_Click(object sender, EventArgs e)
         {
-
-            FacadeControler f = FacadeControler.getFacadeControler();
-            if (f.cnicFormat(this.cnic.Text))
+            if (this.cnic.Text == "")
             {
+                this.CancelSeatErrorProvider.SetError(this.cnic, "Must be filled");
+            }
+            else
+            {
+                this.CancelSeatErrorProvider.Clear();
+                FacadeControler f = FacadeControler.getFacadeControler();
                 if (f.isCnicExist(this.cnic.Text))
                 {
-                   DialogResult r =  MessageBox.Show("Are you sure", "Confirm message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult r = MessageBox.Show("Are you sure", "Confirm message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (r == DialogResult.Yes)
                     {
                         if (f.cancelSeat(seatNo))
@@ -51,16 +55,10 @@ namespace AirSeatReservationSystem
                             this.Hide();
                         }
                     }
-                    else
-                    {
-                        CancelSeat c = new CancelSeat(seatNo);
-                        c.Show();
-                        this.Hide();
-                    }
                 }
                 else
                 {
-                    DialogResult r =  MessageBox.Show("Your record does not find", "Error Message", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                    DialogResult r = MessageBox.Show("Your record does not find", "Error Message", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                     if (r == DialogResult.Cancel)
                     {
                         seatReservation s = new seatReservation();
@@ -69,9 +67,23 @@ namespace AirSeatReservationSystem
                     }
                 }
             }
+        }
+
+        private void cnic_TextChanged(object sender, EventArgs e)
+        {
+            if (cnic.Text == "")
+                CancelSeatErrorProvider.SetError(cnic, "Must be filled");
             else
             {
-                MessageBox.Show("CNIC must be numeric and must have length 13", "Error message", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                FacadeControler f = FacadeControler.getFacadeControler();
+                if (f.cnicFormat(cnic.Text))
+                {
+                    CancelSeatErrorProvider.Clear();
+                }
+                else
+                {
+                   CancelSeatErrorProvider.SetError(cnic, "Invalid Format");
+                }
             }
         }
     }

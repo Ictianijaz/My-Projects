@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CancelSeat));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cnic = new System.Windows.Forms.TextBox();
-            this.ok = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
+            this.ok = new System.Windows.Forms.Button();
+            this.cnic = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CancelSeatErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CancelSeatErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -50,31 +53,15 @@
             this.panel1.Size = new System.Drawing.Size(326, 141);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // cancel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Enter your cnic for seat cancelling";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "CNIC:";
-            // 
-            // cnic
-            // 
-            this.cnic.Location = new System.Drawing.Point(55, 39);
-            this.cnic.Name = "cnic";
-            this.cnic.Size = new System.Drawing.Size(228, 20);
-            this.cnic.TabIndex = 2;
+            this.cancel.Location = new System.Drawing.Point(208, 93);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(75, 23);
+            this.cancel.TabIndex = 4;
+            this.cancel.Text = "Cancel";
+            this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // ok
             // 
@@ -86,15 +73,36 @@
             this.ok.UseVisualStyleBackColor = true;
             this.ok.Click += new System.EventHandler(this.ok_Click);
             // 
-            // cancel
+            // cnic
             // 
-            this.cancel.Location = new System.Drawing.Point(208, 93);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(75, 23);
-            this.cancel.TabIndex = 4;
-            this.cancel.Text = "Cancel";
-            this.cancel.UseVisualStyleBackColor = true;
-            this.cancel.Click += new System.EventHandler(this.cancel_Click);
+            this.cnic.Location = new System.Drawing.Point(55, 39);
+            this.cnic.Name = "cnic";
+            this.cnic.Size = new System.Drawing.Size(228, 20);
+            this.cnic.TabIndex = 2;
+            this.cnic.TextChanged += new System.EventHandler(this.cnic_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "CNIC:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Enter your cnic for seat cancelling";
+            // 
+            // CancelSeatErrorProvider
+            // 
+            this.CancelSeatErrorProvider.ContainerControl = this;
             // 
             // CancelSeat
             // 
@@ -106,10 +114,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CancelSeat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancelSeat";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CancelSeat_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CancelSeatErrorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -122,5 +132,6 @@
         private System.Windows.Forms.TextBox cnic;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider CancelSeatErrorProvider;
     }
 }

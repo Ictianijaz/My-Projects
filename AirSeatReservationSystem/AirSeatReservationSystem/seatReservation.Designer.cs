@@ -313,10 +313,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(85, 9);
+            this.label3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(75, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(386, 24);
+            this.label3.Size = new System.Drawing.Size(439, 23);
             this.label3.TabIndex = 23;
             this.label3.Text = "Welcome to Airline Seat Reservation System ";
             // 
@@ -344,6 +344,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "seatReservation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seat Reservation System";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.seatReservation_FormClosing);
             this.Load += new System.EventHandler(this.seatReservation_Load);
