@@ -26,7 +26,14 @@ namespace BusinessLogicLayer
                 return false;
             }
         }
-
+        public bool isChar(string str)
+        {
+            bool flag = true;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if(!())
+            }
+        }
         public bool isExistCnic(string cnic)
         {
             FileHandler f = new FileHandler();

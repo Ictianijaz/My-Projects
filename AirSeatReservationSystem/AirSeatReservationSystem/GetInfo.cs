@@ -71,7 +71,10 @@ namespace AirSeatReservationSystem
             if (name.Text == "")
                 GetInfoErrorProvider.SetError(name, "Must be filled");
             else
+            {
+
                 GetInfoErrorProvider.Clear();
+            }
         }
 
         private void fName_TextChanged(object sender, EventArgs e)

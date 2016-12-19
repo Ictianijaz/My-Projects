@@ -1,0 +1,4 @@
+G:\5th semester\Visual Studio Projects\KarnaughMapTermProject\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+G:\5th semester\Visual Studio Projects\KarnaughMapTermProject\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+G:\5th semester\Visual Studio Projects\KarnaughMapTermProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+G:\5th semester\Visual Studio Projects\KarnaughMapTermProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
